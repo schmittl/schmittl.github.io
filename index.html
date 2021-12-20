@@ -18,6 +18,7 @@
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.91.0">
 <link rel=alternate type=application/rss+xml href=https://schmittl.github.io/index.xml>
+<link rel=alternate type=application/json href=https://schmittl.github.io/index.json>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
@@ -29,7 +30,7 @@
 <meta name=twitter:image content="https://schmittl.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
 <meta name=twitter:title content="Blog">
 <meta name=twitter:description content="ExampleSite description">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Blog","url":"https://schmittl.github.io","description":"ExampleSite description","thumbnailUrl":"https://schmittl.github.io/favicon.ico","sameAs":["https://twitter.com/","https://stackoverflow.com","https://github.com/"]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Blog","url":"https://schmittl.github.io","description":"ExampleSite description","thumbnailUrl":"https://schmittl.github.io/favicon.ico","sameAs":["index.xml","https://github.com/schmittl","https://youtu.be/dQw4w9WgXcQ"]}</script>
 </head>
 <body class=list id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -44,13 +45,23 @@
 </div>
 <ul id=menu>
 <li>
-<a href=https://schmittl.github.io/categories/ title=categories>
-<span>categories</span>
+<a href=https://schmittl.github.io/archive/ title=Archive>
+<span>Archive</span>
 </a>
 </li>
 <li>
-<a href=https://schmittl.github.io/tags/ title=tags>
-<span>tags</span>
+<a href=https://schmittl.github.io/categories/ title=Categories>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=https://schmittl.github.io/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href=https://schmittl.github.io/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
 </a>
 </li>
 </ul>
@@ -59,32 +70,29 @@
 <main class=main>
 <article class="first-entry home-info">
 <header class=entry-header>
-<h1>Hi there 👋</h1>
+<h1>Hey there 👋</h1>
 </header>
 <section class=entry-content>
 <p>Welcome to my blog</p>
 </section>
 <footer class=entry-footer>
 <div class=social-icons>
-<a href=https://twitter.com/ target=_blank rel="noopener noreferrer me" title=Twitter><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg>
+<a href=index.xml target=_blank rel="noopener noreferrer me" title=RsS><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg>
 </a>
-<a href=https://stackoverflow.com target=_blank rel="noopener noreferrer me" title=Stackoverflow><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.913 16.041v6.848h17.599v-6.848M7.16 18.696h8.925M7.65 13.937l8.675 1.8M9.214 9.124l8.058 3.758M12.086 4.65l6.849 5.66M15.774 1.111l5.313 7.162"/></svg>
+<a href=https://github.com/schmittl target=_blank rel="noopener noreferrer me" title=Github><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg>
 </a>
-<a href=https://github.com/ target=_blank rel="noopener noreferrer me" title=Github><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg>
+<a href=https://youtu.be/dQw4w9WgXcQ target=_blank rel="noopener noreferrer me" title=Youtube><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78.0 00-1.94-2C18.88 4 12 4 12 4s-6.88.0-8.6.46a2.78 2.78.0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78.0 003.4 19c1.72.46 8.6.46 8.6.46s6.88.0 8.6-.46a2.78 2.78.0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
 </a>
 </div>
 </footer>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>First
+<h2>First Post
 </h2>
 </header>
-<section class=entry-content>
-<p>First post Great content</p>
-</section>
-<footer class=entry-footer><span title="2021-12-19 16:58:51 +0100 +0100">December 19, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to First" href=https://schmittl.github.io/posts/first/></a>
+<footer class=entry-footer><span title="2021-12-19 16:58:51 +0100 +0100">December 19, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Lukas Schmitt</footer>
+<a class=entry-link aria-label="post link to First Post" href=https://schmittl.github.io/posts/first/></a>
 </article>
 </main>
 <footer class=footer>
