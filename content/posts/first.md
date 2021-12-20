@@ -1,9 +1,11 @@
 ---
-title: "First"
+title: "First Post"
 date: 2021-12-19T16:58:51+01:00
-author: Me
+author: "Lukas Schmitt"
+tags: ["first"]
+categories: ["first"]
 ---
 
-# First post
+# First headline
 
 Great content
